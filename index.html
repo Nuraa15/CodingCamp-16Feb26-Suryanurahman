@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list kerjaan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>kerjaan</h1>
+            <p>Kelola tugas harian</p>
+        </header>
+        
+        <div class="input-group">
+            <input type="text" id="todoInput" placeholder="Apa yang ingin dikerjakan?">
+            <input type="date" id="dateInput">
+            <button id="addBtn">Simpan</button>
+        </div>
+
+        <div class="filters">
+            <span class="filter-btn active" data-filter="all">Semua</span>
+            <span class="filter-btn" data-filter="pending">Aktif</span>
+            <span class="filter-btn" data-filter="completed">Selesai</span>
+        </div>
+
+        <ul id="todoList">
+            </ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
